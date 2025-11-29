@@ -17,13 +17,17 @@ export default function Logos() {
       <Swiper
         slidesPerView={4}
         spaceBetween={30}
+
         centeredSlides={false}
         pagination={{
           clickable: true,
         }}
         autoplay={{
-          delay: 2500,
+          delay: 3000,
           disableOnInteraction: true,
+          pauseOnMouseEnter: true, 
+          effect: 'slide',            
+    easing: 'ease-in-out', 
         }}
        modules={[Autoplay]}
         className="mySwiper"
